@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>생성형 AI와 웹 개발 - Team A조</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 상단 고정 네비게이션 바 -->
+    <header class="navbar">
+      <div class="logo">Team A조</div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <nav class="dropdown" id="dropdownMenu">
+        <a href="index.html#home">홈</a>
+        <a href="index.html#section2">생성형 AI란?</a>
+        <a href="index.html#section3">AI와 웹 개발</a>
+        <a href="index.html#section4">도입 시 고려사항</a>
+        <a href="index.html#section5">팀 소개</a>
+        <a href="code.html">Code</a>
+      </nav>
+    </header>
+
+    <section class="tech-section">
+      <h2>홈페이지 제작에 사용된 기술 및 특징</h2>
+      <div class="tech-container">
+        <div class="tech-card">
+          <h3>HTML5 - 시맨틱 마크업</h3>
+          <p>
+            본 프로젝트는 HTML5를 사용하여 웹 페이지의 구조를 세밀하게
+            설계했습니다. 특히, 시맨틱 태그를 활용하여 웹페이지의 각 요소를
+            논리적이고 의미 있는 단위로 구분했습니다. 예를 들어,
+            <code>&lt;header&gt;</code> 태그는 페이지의 상단 네비게이션과 로고를
+            포함하며, <code>&lt;nav&gt;</code> 태그는 메뉴 항목을 그룹화하여
+            접근성 및 SEO에 유리하게 설계되었습니다.
+            <br />
+            이렇게 시맨틱 HTML을 사용하면 검색 엔진이 페이지 내용을 더 잘
+            이해하고, 화면 리더를 사용하는 장애인 사용자들에게도 더 나은 경험을
+            제공할 수 있습니다. 예를 들어, <code>&lt;article&gt;</code>,
+            <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code> 등은 각
+            콘텐츠 영역을 명확하게 정의하여 페이지 구조를 한눈에 파악할 수
+            있도록 합니다.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <h3>CSS3 - 반응형 웹 디자인</h3>
+          <p>
+            CSS3는 Flexbox와 Grid 레이아웃을 활용하여 반응형 웹 디자인을
+            구현하는 데 사용되었습니다. Flexbox는 특히 한 줄에 배치할 아이템들이
+            있을 때 유연하게 배치할 수 있도록 돕고, Grid는 복잡한 레이아웃을
+            명확하고 직관적으로 작성할 수 있게 해줍니다.
+            <br />
+            페이지는 다양한 화면 크기(PC, 태블릿, 모바일)에 맞게 자동으로
+            레이아웃이 조정되도록 설정되었습니다. 이를 통해 사용자가 어떤 장치를
+            사용하든지 최적화된 페이지 레이아웃을 제공할 수 있습니다. 예를 들어,
+            메뉴는 모바일 화면에서는 세로형 네비게이션으로, 데스크탑에서는
+            가로형으로 바뀌게 설계되었습니다.
+            <br />
+            또한, 시스템 기본 폰트를 사용하여 로딩 속도를 최소화하고, 불필요한
+            외부 웹폰트 파일을 제외하여 성능 최적화도 고려했습니다.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <h3>JavaScript - 사용자 인터랙션 구현</h3>
+          <p>
+            JavaScript는 페이지에 동적인 기능을 추가하는 데 중요한 역할을
+            했습니다. 예를 들어, 네비게이션 메뉴의 토글 기능을 구현하여 사용자가
+            모바일 환경에서도 간편하게 메뉴를 열고 닫을 수 있게 했습니다. 또한,
+            Hero 섹션의 스크롤 애니메이션을 JavaScript로 제어하여, 사용자가
+            페이지를 스크롤할 때 부드럽게 섹션 간 이동할 수 있도록 했습니다.
+            <br />
+            이 외에도 JavaScript는 버튼 클릭 시 특정 요소가 변화하거나, 페이지
+            내에서 동적으로 데이터가 갱신되는 등의 다양한 기능을 구현하는 데
+            사용되었습니다. 이 모든 기능들은 외부 라이브러리 없이 순수
+            JavaScript로 구현되어 성능 최적화와 유지보수 편의성을 높였습니다.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <h3>웹 접근성 및 성능 최적화</h3>
+          <p>
+            웹 접근성(Web Accessibility)을 고려하여 페이지를 설계했습니다. 모든
+            이미지에는 <code>alt</code> 속성을 사용하여 대체 텍스트를 제공하고,
+            시각적으로 장애가 있는 사용자를 위해 키보드 내비게이션을 지원하며,
+            화면 리더가 잘 작동하도록 시맨틱 마크업을 사용했습니다.
+            <br />
+            성능 최적화를 위해, 불필요한 JavaScript 라이브러리나 외부 리소스를
+            최소화하고, 이미지 파일 크기를 줄여 페이지 로딩 속도를 개선했습니다.
+            또한, <code>lazy loading</code> 기법을 적용하여 사용자가 페이지를
+            스크롤할 때 필요한 이미지나 콘텐츠만 로드되도록 설정해 불필요한
+            리소스 로드를 방지했습니다. 이러한 최적화 기법들은 사용자 경험을
+            크게 향상시키며, 특히 모바일 환경에서 중요한 역할을 합니다.
+          </p>
+        </div>
+
+        <div class="tech-card">
+          <h3>섹션 기반 디자인 - 사용자 친화적 네비게이션</h3>
+          <p>
+            웹사이트는 하나의 HTML 파일 내에서 각 섹션을 명확하게 구분하여
+            설계되었습니다. 이를 통해 사용자는 페이지 내에서 상단 네비게이션
+            메뉴를 클릭하면 해당 섹션으로 부드럽게 이동할 수 있습니다. 이 방식은
+            페이지 로딩을 빠르게 하면서도, 사용자에게는 일관된 경험을
+            제공합니다.
+            <br />
+            예를 들어, '소개', '특징', '팀 구성', '문의'와 같은 주요 섹션들이
+            명확히 구분되어 있어 사용자는 원하는 정보로 빠르게 이동할 수
+            있습니다. 이 방식은 특히 긴 페이지에서 스크롤을 통해 각 섹션으로
+            자연스럽게 이동하는 데 유용하며, 페이지 내비게이션이 직관적으로
+            이루어집니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('dropdownMenu')
+        menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex'
+      }
+    </script>
+  </body>
+</html>

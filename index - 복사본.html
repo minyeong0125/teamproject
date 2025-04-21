@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>생성형 AI와 웹 개발 - Team A조</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 상단 고정 네비게이션 바 -->
+    <header class="navbar">
+      <div class="logo">Team A조</div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <nav class="dropdown" id="dropdownMenu">
+        <a href="#home">홈</a>
+        <a href="#section2">생성형 AI란?</a>
+        <a href="#section3">AI와 웹 개발</a>
+        <a href="#section4">도입 시 고려사항</a>
+        <a href="#section5">팀 소개</a>
+        <a href="code.html">Code</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="image-mainsection">
+        <div class="image-text">
+          <!-- 홈 섹션 -->
+          <section id="home" class="section">
+        <h1>생성형 AI와 웹 개발</h1>
+        <p>
+          생성형 AI가 웹 개발에 미치는 영향과 활용 사례를 소개하는
+          홈페이지입니다.
+        </p>
+      </div>
+    </div>
+
+        <br />
+
+        <div class="section1-layout-container">
+          <div class="section1-left-box">
+            <a class="section1-button" href="#section2">생성형 AI란?</a>
+            <a class="section1-button" href="#section3">AI와 웹 개발</a>
+            <a class="section1-button" href="#section4">도입 시 고려사항</a>
+            <a class="section1-button" href="#section5">팀 소개</a>
+          </div>
+
+          <div class="section1-right-box">
+            <div class="section1-desc">
+              <h4>생성형 AI란?</h4>
+              <p>
+                생성형 AI는 텍스트, 이미지, 코드 등을 자동으로 생성할 수 있는
+                인공지능 기술입니다.
+              </p>
+            </div>
+
+            <div class="section1-desc">
+              <h4>AI와 웹 개발</h4>
+              <p>
+                웹 개발에서는 코드 자동 생성, 사용자 경험 개선 등에 생성형 AI가
+                활용됩니다.
+              </p>
+            </div>
+
+            <div class="section1-desc">
+              <h4>도입 시 고려사항</h4>
+              <p>
+                도입 시 데이터 보안, 정확성, 유지 관리 비용 등을 고려해야
+                합니다.
+              </p>
+            </div>
+
+            <div class="section1-desc">
+              <h4>팀 소개</h4>
+              <p>팀원(GitHub, 프로젝트 등)을 소개합니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 개념 섹션 -->
+        <section id="section2" class="section section2-ai">
+          <h2>1. 생성형 AI란?</h2>
+          <div class="card">
+            <img src="section2-ai.png" alt="AI 개념" />
+            <p>
+              생성형 AI(Generative AI)는 대량의 데이터를 학습하여
+              <strong>새로운 콘텐츠</strong>(텍스트, 이미지, 음악, 코드 등)를
+              생성하는 인공지능 기술입니다. 사용자의 입력에 기반해 창의적이고
+              유연한 결과를 생성할 수 있어 다양한 분야에서 주목받고 있습니다.
+            </p>
+          </div>
+
+          <!-- 기존 AI와의 차이점 -->
+          <div class="section2-ai-block section2-ai-compare">
+            <h3>기존 AI와의 차이점</h3>
+            <div class="section2-compare-table">
+              <div class="section2-compare-row">
+                <div class="section2-compare-title">기존 AI</div>
+                <div class="section2-compare-title">생성형 AI</div>
+              </div>
+              <div class="section2-compare-row">
+                <div>분류, 예측, 추천 중심</div>
+                <div>텍스트, 이미지 등 콘텐츠 생성</div>
+              </div>
+              <div class="section2-compare-row">
+                <div>정해진 규칙에 따라 작동</div>
+                <div>유연하고 창의적인 결과 생성</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 대표적인 생성형 AI 모델 소개 블록 -->
+          <!-- 대표적인 생성형 AI 모델 소개 블록 -->
+          <div class="section2-ai-block">
+            <h3>대표적인 생성형 AI 모델</h3>
+            <ul class="section2-model-list">
+              <li>
+                <strong
+                  ><a href="https://chat.openai.com/" target="_blank">ChatGPT</a
+                  >:</strong
+                >
+                OpenAI에서 개발한 대화형 언어 모델로, 질문에 답변하거나 글을
+                작성하고, 코드를 도와주는 등 다양한 용도로 사용됩니다.
+                <em>예: 고객 서비스 챗봇, 학습 보조, 이메일 작성 등</em>
+              </li>
+              <li>
+                <strong
+                  ><a href="https://openai.com/dall-e" target="_blank">DALL·E</a
+                  >:</strong
+                >
+                텍스트 설명을 바탕으로 이미지를 생성하는 모델입니다. 현실에 없는
+                장면이나 창의적인 삽화를 만드는 데 활용됩니다.
+                <em>예: 마케팅용 이미지 제작, 캐릭터 디자인 등</em>
+              </li>
+              <li>
+                <strong>
+                  <a
+                    href="https://google-research.github.io/seanet/musiclm/examples/"
+                    target="_blank"
+                    >MusicLM</a
+                  >:</strong
+                >
+                사용자의 텍스트 설명(예: "잔잔한 피아노 선율의 재즈 음악")을
+                바탕으로 음악을 작곡하는 모델입니다.
+                <em>예: 게임 배경 음악 생성, 영상용 BGM 제작 등</em>
+              </li>
+              <li>
+                <strong>
+                  <a
+                    href="https://aws.amazon.com/codewhisperer/"
+                    target="_blank"
+                    >CodeWhisperer</a
+                  >:</strong
+                >
+                Amazon이 개발한 AI 코딩 도우미로, 개발자가 작성 중인 코드에 맞춰
+                자동으로 코드를 제안하거나 완성합니다.
+                <em>예: 반복 작업 자동화, 코드 예측 및 오류 감소</em>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <!-- AI와 웹 개발 섹션 -->
+      <section id="section3" class="section">
+        <h2>2. 생성형 AI와 웹 개발</h2>
+
+        <div class="card">
+          <img src="ai.jpg" alt="웹 개발" />
+          <p>
+            생성형 AI는 웹 개발 분야에서 빠르게 활용되고 있습니다.<br />
+            예를 들어, <strong>코드 자동 생성</strong>,
+            <strong>디자인 추천</strong>, <strong>에러 디버깅</strong>,
+            <strong>콘텐츠 자동 작성</strong> 등에 사용되며,<br />
+            개발 생산성을 높이고, 사용자 맞춤형 경험을 제공하는 데 기여하고
+            있습니다.
+          </p>
+        </div>
+        <table class="ai-table">
+          <thead>
+            <tr>
+              <th>활용 분야</th>
+              <th>설명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>코드 자동 생성 & 보완</td>
+              <td>
+                HTML, CSS, JavaScript 코드 생성 및 버그 수정, 최적화 기능 제공
+              </td>
+            </tr>
+            <tr>
+              <td>UI/UX 디자인 자동화</td>
+              <td>레이아웃 추천, 접근성 향상, 디자인 시안 자동 생성</td>
+            </tr>
+            <tr>
+              <td>콘텐츠 생성</td>
+              <td>텍스트 작성, 다국어 번역, SEO에 최적화된 콘텐츠 생성</td>
+            </tr>
+            <tr>
+              <td>챗봇 & 인터랙션 자동화</td>
+              <td>FAQ 챗봇, 대화형 인터페이스로 사용자와 실시간 소통</td>
+            </tr>
+            <tr>
+              <td>개발자 생산성 향상</td>
+              <td>자동 주석 생성, 코드 리팩토링, 문서화 지원</td>
+            </tr>
+            <tr>
+              <td>테스트 자동화</td>
+              <td>테스트 코드 자동 생성, UI 테스트 시나리오 작성</td>
+            </tr>
+            <tr>
+              <td>개인화된 사용자 경험</td>
+              <td>사용자 행동 기반 콘텐츠 추천 및 맞춤형 페이지 제공</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 도입 시 고려사항 섹션 -->
+      <section id="section4" class="section">
+        <h2>3. 도입 시 고려사항</h2>
+      </br></br></Br>
+      <div id="scroll-lines">
+      </br>
+        <div class="line"><h3>생성형 AI의 장점<h3></div>
+        <div class="line">생성형 AI는 우리에게 다양한 도움을 줍니다.</div>
+        <div class="line">반복적이거나 시간이 많이 소요되는 작업들을 자동화하여 업무 효율을 향상시킬 수 있는 장점이 있죠.</div>
+        <div class="line">시간이 많이 소요되는 반복적인 작업은 뭐가 있을까요?</div>
+        <div class="line">코드 생성, 문서 요약, 번역, 콘텐츠 제작 등이 있습니다.</div>
+        <div class="line">또한 텍스트, 이미지, 음향, 영상 등 다양한 형태의 창작물을 생성할 수 있어 사람의 상상력을 보완하거나 자극하는 도구로 활용될 수 있습니다.</div>
+        <div class="line">이러한 생성형 AI로 만든 결과물들을 실제로 본인이 사용하는 것에 있어 인건비나 외주 비용 절감 등의 효과도 얻을 수 있죠.</div>
+        <div class="line">위와 같이 생성형 AI를 사용했을 때 얻을 수 있는 장점은 많습니다.</div>
+        <div class="line"><h3>사례1<h3></div>
+        <div class="line">여기서 최근 생성형 AI로 영화를 만들어 상을 받은 사례를 살펴봅시다.</div>
+        <div class="line">
+          <iframe
+          src="https://videos.ctfassets.net/g93l8skreh7b/2sn9HkPpCBAaPMkATf4JGf/1db68f7dd0a269c03cba5468244db8a6/one_more_pumpkin_for_AIFF.mp4"
+          width="400"
+          height="233"
+          autoplay
+        ></iframe>
+        </div>
+        <div class="line">어떤가요 위 영상을 생성형 AI가 만들었다는 사실이 놀랍지 않은가요?</div>
+        <div class="line">물론 AI가 만든 것 같이 부자연스러운 부분도 많지만 꽤나 사실적이지 않나요?</div>
+        <div class="line">많은 사람들이 생성형 AI가 만든 영상이라는 사실에 놀라했습니다.</div>
+        
+        <div class="line"><h3>생성형 AI의 한계점<h3></div>
+        <div class="line">하지만 한계점도 있습니다.</div>
+        <div class="line">생성된 콘텐츠가 사실과 다른 정보를 포함할 경우도 있기 때문에 생성형 AI를 통해 나온 결과물을 온전히 믿어서는 안됩니다.</div>
+        <div class="line">무조건 맞다고 생각하지 말고 비판적 의식을 가지고 구별해야 합니다.</div>
+        <div class="line">또한 생성형 AI에 지나치게 의존하여 많이 사용하게 될 경우 사용자의 사고력이나 창의력이 저하될 수 있다는 걱정이 있습니다.</div>
+        <div class="line">윤리적 문제: 생성형 AI가 등장하면서 윤리적 측면에서의 문제도 많이 나타나고 있는데요, 한 가지 사례를 살펴보시죠.</div>
+        
+        <div class="line"><h3>사례2<h3></div>
+        <div class="line">먼저 요즘 가장 이슈되고 있는 지브리 그림체 알고 계시나요?</div>
+        <div class="line">생성형 AI를 통해서 원하는 사진을 지브리 애니메이션 그림체로 쉽게 바꿀 수 있습니다.</div>
+        <div class="line">쉽고 빠르게 지브리화 된 이미지를 얻을 수 있어 많은 사람들이 사용하고 있습니다.</div>
+        <div class="line">이 글을 읽고 있는 여러분 중에서도 지브리 이미지를 생성해 본 사람들이 있을 것 같습니다.</div>
+        <div class="line">한 측면에서는 이렇게 쉽고 빠르게 지브리 이미지를 얻을 수 있어 편리하고 재미있지만 또 다른 측면을 보게 되면 이 수행은 저작권침해로 이어질 수 있습니다.</div>
+        <div class="line">AI가 학습하는 데이터의 원작자의 허락 없이 이미지나 일러스트 등이 포함되어 있을 경우 저작권 문제가 발생합니다.</div>
+        <div class="line">저작권 문제뿐만 아니라 전통적인 예술의 미학이나 특정 문화 예술 스타일이 AI에 의해 대중화가 되고 변형되며 본래의 의미가 희미해질 수 있습니다.</div>
+        
+        <div class="line"><h3>결론<h3></div>
+        <div class="line">이렇게 생성형 AI는 결코 좋은 점만 있는 것이 아니라는 점을 우리는 알아야 합니다.</div>
+        <div class="line">생성형 AI를 올바르게 사용해야 하기 때문이죠.</div>
+        <div class="line">보안, 정확도, 저작권 등의 문제가 있으므로 신중한 도입이 필요합니다.</div>
+      </div>
+
+      </section>
+
+      <!-- 팀 소개 섹션 -->
+      <section id="section5" class="section">
+        <h2 style="text-align: center">4. 팀 소개</h2>
+        <br /><br />
+        <div class="team-wrapper">
+          <!-- 첫 번째 줄 (사진 3개) -->
+          <div class="team-row">
+            <!-- 팀원 1 - 박민영 -->
+            <div class="image-container">
+              <img src="1.png" alt="박민영" />
+              <div class="overlay">
+                <div class="overlay-box">
+                  <p>박민영<br />메인 (홈) 페이지 담당</p>
+                  <a href="https://github.com/minyeong0125" target="_blank"
+                    ><button>GitHub</button></a
+                  >
+                  <a
+                    href="https://homepage-nine-ochre.vercel.app/"
+                    target="_blank"
+                    ><button>포트폴리오 보기</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 팀원 2 - 송미강 -->
+            <div class="image-container">
+              <img src="2.png" alt="송미강" />
+              <div class="overlay">
+                <div class="overlay-box">
+                  <p>송미강<br />3번 페이지 담당</p>
+                  <a href="https://github.com/Junbyung2" target="_blank"
+                    ><button>GitHub</button></a
+                  >
+                  <a
+                    href="https://portfolio-iota-eosin-82.vercel.app/"
+                    target="_blank"
+                    ><button>포트폴리오 보기</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 팀원 3 - 원종은 -->
+            <div class="image-container">
+              <img src="3.png" alt="원종은" />
+              <div class="overlay">
+                <div class="overlay-box">
+                  <p>원종은<br />1번 페이지 담당</p>
+                  <a href="https://github.com/euniii0224" target="_blank"
+                    ><button>GitHub</button></a
+                  >
+                  <a
+                    href="https://portfolio-six-alpha-99.vercel.app/"
+                    target="_blank"
+                    ><button>포트폴리오 보기</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 두 번째 줄 (사진 2개) -->
+          <div class="team-row second-row">
+            <!-- 팀원 4 - 이성혜 -->
+            <div class="image-container">
+              <img src="4.png" alt="이성혜" />
+              <div class="overlay">
+                <div class="overlay-box">
+                  <p>이성혜<br />2번 페이지 담당</p>
+                  <a href="https://github.com/SuNghYe414" target="_blank"
+                    ><button>GitHub</button></a
+                  >
+                  <a href="https://middle-ind.vercel.app/" target="_blank"
+                    ><button>포트폴리오 보기</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- 팀원 5 - 허다현 -->
+            <div class="image-container">
+              <img src="5.png" alt="허다현" />
+              <div class="overlay">
+                <div class="overlay-box">
+                  <p>허다현<br />4번 페이지 담당</p>
+                  <a href="https://github.com/chick127" target="_blank"
+                    ><button>GitHub</button></a
+                  >
+                  <a href="https://my-homepage-self.vercel.app/" target="_blank"
+                    ><button>포트폴리오 보기</button></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section">
+      <p>&copy; 2025 생성형 AI 웹개발 팀</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("dropdownMenu");
+        menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+          document.getElementById("dropdownMenu").style.display = "none";
+        });
+      });
+    </script>
+
+    <script>
+      const lines = document.querySelectorAll(".line");
+      let currentIndex = 0;
+
+      // 스크롤 시 한 줄씩 나타나게 하기
+      window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY + window.innerHeight;
+        const containerTop = document.getElementById("scroll-lines").offsetTop;
+
+        // 기준점에 도달한 후, 스크롤할 때마다 한 줄씩 등장
+        if (scrollY > containerTop + currentIndex * 80 && currentIndex < lines.length) {
+          lines[currentIndex].classList.add("show");
+          currentIndex++;
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+            const imageContainers = document.querySelectorAll('.image-container')
+
+            const observer = new IntersectionObserver(
+              (entries, observer) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    entry.target.classList.add('visible') // 화면에 보일 때 애니메이션 클래스 추가
+                    observer.unobserve(entry.target) // 한번만 애니메이션
+                  }
+                })
+              },
+              {
+                threshold: 0.3, // 30%가 화면에 보일 때
+              }
+            )
+
+            imageContainers.forEach((el) => {
+              observer.observe(el) // 각 요소들을 관찰
+            })
+          })
+    </script>
+  </body>
+</html>
