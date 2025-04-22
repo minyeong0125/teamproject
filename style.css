@@ -76,7 +76,7 @@ body {
 .image-mainsection {
   position: relative;
   min-height: 100vh;
-  background-image: url(chat.png);
+  background-image: url(chat.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
