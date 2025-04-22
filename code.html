@@ -87,12 +87,12 @@
           </p>
         </div>
 
+        <div class="tech-card">
         <section class="tech-section">
             <h3>스크롤 애니메이션</h3>
             <div class="example">
               <object width="300" data="/+.html"></object>
             </div>
-            <div class="tech-card">
               <!-- html -->
               <img src="스크롤html.jpg" width="300" />
               <p>html에서 애니메이션을 넣을 요소를 class지정해줍니다.</p>
@@ -118,11 +118,16 @@
 
          <div class="tech-card">
           <h3>Section 5</h3>
-
-          <img src="html1.png" alt="" width="100%" height="auto" />
-          <img src="html2.png" alt="" width="100%" height="auto" />
-          <img src="css1.png" alt="" width="100%" height="auto" />
-          <img src="css2.png" alt="" width="100%" height="auto" />
+          <div class="slider">
+            <button class="prev">&#10094;</button>
+            <div class="slide-container">
+              <img class="slide active" src="html1.png" alt="Fade Image" />
+              <img class="slide" src="html2.png" alt="Table Image" />
+              <img class="slide" src="css1.png" alt="HTML Image" />
+              <img class="slide" src="css2.png" alt="css Image" />
+            </div>
+            <button class="next">&#10095;</button>
+          </div>
           <p>
             < div class="team-row" >< /div > 안에는 첫 번째 줄에 사진 3개만 넣는
             class를 지정했다. 팀원 4부터 < div class="team-row second-row" ><
