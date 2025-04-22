@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/+style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="note">
+      <p class="line">반복적인 작업을 자동화하여 시간을 절약할 수 있습니다</p>
+      <p class="line">창의력을 자극하고 새로운 아이디어를 도출해줍니다</p>
+      <p class="line">문서 작성, 코드 생성, 이미지 생성까지—AI는 다재다능</p>
+      <p class="line">
+        개인부터 기업까지 누구나 활용할 수 있는 도구가 되었습니다
+      </p>
+      <p class="line">하지만 생성형 AI는 완벽하지 않습니다</p>
+      <p class="line">
+        사실과 다른 정보를 만들거나 편향된 결과를 내놓을 수도 있습니다
+      </p>
+    </div>
+  </body>
+
+  <script>
+    // 모든 .line 요소를 선택
+    const lines = document.querySelectorAll('.line')
+
+    // 스크롤 될 때 실행되는 함수
+    function revealOnScroll() {
+      lines.forEach((line) => {
+        const rect = line.getBoundingClientRect()
+        const isVisible = rect.top < window.innerHeight - 100
+
+        if (isVisible) {
+          line.classList.add('show')
+        }
+      })
+    }
+
+    // 초기 실행 + 스크롤 이벤트에 연결
+    window.addEventListener('scroll', revealOnScroll)
+    window.addEventListener('load', revealOnScroll)
+  </script>
+</html>
