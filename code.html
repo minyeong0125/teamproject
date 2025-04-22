@@ -87,22 +87,34 @@
           </p>
         </div>
 
-        <div class="tech-card">
-          <h3>웹 접근성 및 성능 최적화</h3>
-          <p>
-            웹 접근성(Web Accessibility)을 고려하여 페이지를 설계했습니다. 모든
-            이미지에는 <code>alt</code> 속성을 사용하여 대체 텍스트를 제공하고,
-            시각적으로 장애가 있는 사용자를 위해 키보드 내비게이션을 지원하며,
-            화면 리더가 잘 작동하도록 시맨틱 마크업을 사용했습니다.
-            <br />
-            성능 최적화를 위해, 불필요한 JavaScript 라이브러리나 외부 리소스를
-            최소화하고, 이미지 파일 크기를 줄여 페이지 로딩 속도를 개선했습니다.
-            또한, <code>lazy loading</code> 기법을 적용하여 사용자가 페이지를
-            스크롤할 때 필요한 이미지나 콘텐츠만 로드되도록 설정해 불필요한
-            리소스 로드를 방지했습니다. 이러한 최적화 기법들은 사용자 경험을
-            크게 향상시키며, 특히 모바일 환경에서 중요한 역할을 합니다.
-          </p>
-        </div>
+        <section class="tech-section">
+            <h3>스크롤 애니메이션</h3>
+            <div class="example">
+              <object width="300" data="/+.html"></object>
+            </div>
+            <div class="tech-card">
+              <!-- html -->
+              <img src="/image/스크롤html.JPG" width="600" />
+              <p>html에서 애니메이션을 넣을 요소를 class지정해줍니다.</p>
+              <img src="/image/스크롤css.JPG" width="600" />
+              <p>
+                css에서 .line은 처음 페이지에 접속했을 때의 line요소들의 상태를
+                말한다. opacity:0; 요소가 보이지 않도록한다.
+                transform:translateY(20px):요소를 아래로 20px내려놓는다.
+                transition :all 0.5s ease : 상태가 바뀔 때 0.5초동안 부드럽게
+                애니메이션 적용한다. .line.show 자바를 통해 .show클래스가 추가
+                되면, opacity:1 해당 요소가 보이게되고 transform: translateY(0)
+                원래 위치로 올라감
+              </p>
+              <img src="/image/스크롤js.JPG" width="600" />
+              <p>
+                .line요소를 선택하여 lines변수에 저장한 뒤 스크롤이 발생할 때
+                실행할 함수에서 line을 한줄씩 순회시킨 후 요소가 화면 안에
+                들어왔는지 확인한다. 화면안에 요소가 있다면 .show요소를 붙여서
+                애니메이션이 실행된다.
+              </p>
+            </div>
+          </section>
 
         <div class="tech-card">
           <h3>섹션 기반 디자인 - 사용자 친화적 네비게이션</h3>
