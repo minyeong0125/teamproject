@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>생성형 AI와 웹 개발 - Team A조</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
   </head>
   <body>
     <header class="navbar">
-      <div class="logo">Team A조</div>
+      <div class="logo">Team. 미정</div>
       <div class="menu-icon" onclick="toggleMenu()">☰</div>
       <nav class="dropdown" id="dropdownMenu">
         <a href="index.html#section1">홈</a>
@@ -38,10 +34,10 @@
             <button class="next">&#10095;</button>
           </div>
           <p>
-            <strong>HTML</strong>에서 div와 section 태그로 화면을 구역별로 나눴고 a href=""
+            <strong>1. HTML</strong>에서 div와 section 태그로 화면을 구역별로 나눴고 a href=""
             형식을 사용해서 버튼을 누르면 해당 섹션으로 바로 이동할 수 있도록
             만들었습니다.</br>
-            <strong>CSS</strong>에서는 flex를 사용해서 레이아웃을 가로로 정렬하고 :hover로
+            <strong>2. CSS</strong>에서는 flex를 사용해서 레이아웃을 가로로 정렬하고 :hover로
             마우스를 올렸을 때 색이 변하게 만들었습니다.
           </p>
         </div>
@@ -65,9 +61,9 @@
             <button class="next">&#10095;</button>
           </div>
           <p>
-            <strong>flexbox</strong>를 활용한 테이블 구조</br>
-            <strong>li::before</strong>를 통해 리스트에 아이콘 형식 표시</br>
-            <strong>ai-block</strong>카드 디자인 효과로 그림자와 모서리를 둥글게 해서 깔끔하게 함
+            <strong>1. flexbox</strong>를 활용한 테이블 구조</br>
+            <strong>2. li::before</strong>를 통해 리스트에 아이콘 형식 표시</br>
+            <strong>3. ai-block</strong>카드 디자인 효과로 그림자와 모서리를 둥글게 해서 깔끔하게 함
           </p>
         </div>
 
@@ -84,40 +80,39 @@
             <button class="next">&#10095;</button>
           </div>
           <p>
-            <strong>@keyframes fadeInUp</strong> 이 애니메이션은 각 테이블 행이 점차적으로 위로 올라오며 나타나는 효과를 나타냅니다.</br>
-            <strong>.ai-table tbody tr</strong> 이 부분은 .ai-table 클래스 내의 tbody 요소 안에 있는 모든 tr(테이블 행) 요소에 애니메이션을 적용합니다.</br>
-            <strong>nth-child 선택자</strong>는 각 테이블 행에 대해 애니메이션이 순차적으로 지연되도록 설정합니다. 즉, 각 행의 애니메이션이 다른 시간에 시작됩니다.
+            <strong>1. @keyframes fadeInUp</strong> 이 애니메이션은 각 테이블 행이 점차적으로 위로 올라오며 나타나는 효과를 나타냅니다.</br>
+            <strong>2. .ai-table tbody tr</strong> 이 부분은 .ai-table 클래스 내의 tbody 요소 안에 있는 모든 tr(테이블 행) 요소에 애니메이션을 적용합니다.</br>
+            <strong>3. nth-child 선택자</strong>는 각 테이블 행에 대해 애니메이션이 순차적으로 지연되도록 설정합니다. 즉, 각 행의 애니메이션이 다른 시간에 시작됩니다.
 
           </p>
         </div>
-        
-        <div class="tech-card">
-            <h3>스크롤 애니메이션</h3>
-              <object width="300" data="/+.html"></object>
-              <img src="스크롤html.JPG" width="300" />
-              <p>html에서 애니메이션을 넣을 요소를 class지정해줍니다.</p>
-              <img src="스크롤css.JPG" width="300" />
-              <p>
-                css에서 .line은 처음 페이지에 접속했을 때의 line요소들의 상태를
-                말한다. opacity:0; 요소가 보이지 않도록한다.
-                transform:translateY(20px):요소를 아래로 20px내려놓는다.
-                transition :all 0.5s ease : 상태가 바뀔 때 0.5초동안 부드럽게
-                애니메이션 적용한다. .line.show 자바를 통해 .show클래스가 추가
-                되면, opacity:1 해당 요소가 보이게되고 transform: translateY(0)
-                원래 위치로 올라감
-              </p>
-              <img src="스크롤js.JPG" width="300" />
-              <p>
-                .line요소를 선택하여 lines변수에 저장한 뒤 스크롤이 발생할 때
-                실행할 함수에서 line을 한줄씩 순회시킨 후 요소가 화면 안에
-                들어왔는지 확인한다. 화면안에 요소가 있다면 .show요소를 붙여서
-                애니메이션이 실행된다.
-              </p>
-          </div>
-          </section>
 
-         <div class="tech-card">
+        <section class="tech-section">
+          <h3>스크롤 애니메이션</h3>
+          <div class="example">
+            <object width="300" data="/+.html"></object>
+          </div>
+          <div class="tech-card">
+            <div class="slider">
+              <button class="prev">&#10094;</button>
+              <div class="slide-container">
+                <img class="slide active" src="스크롤html.jpg" alt="Fade Image" />
+                <img class="slide" src="스크롤css.jpg" alt="Table Image" />
+                <img class="slide" src="스크롤js.jpg" alt="HTML Image" />
+              </div>
+              <button class="next">&#10095;</button>
+            </div>
+            <p>
+              <strong>1.</strong> html에서 애니메이션을 넣을 요소를 class지정
+              <strong>2.</strong> css에서 opacity:0->1 요소가 보이지 않다가 보이도록. transform:translateY(20px)->(0) 요소를 20px 아래에서 제자리에.transition :all 0.5s ease; 상태가 바뀔 때 0.5초동안 부드럽게 애니메이션 적용
+              <strong>3.</strong> .line요소를 선택하여 스크롤이 발생할 때 실행할 함수에서 요소가 화면 안에 들어있는지 확인 후 있다면 .show요소를 붙여서 애니메이션 실행
+            </p>
+          </div>
+        </section>
+
+        <div class="tech-card">
           <h3>Section 5</h3>
+
           <div class="slider">
             <button class="prev">&#10094;</button>
             <div class="slide-container">
@@ -129,37 +124,23 @@
             <button class="next">&#10095;</button>
           </div>
           <p>
-            < div class="team-row" >< /div > 안에는 첫 번째 줄에 사진 3개만 넣는
-            class를 지정했다. 팀원 4부터 < div class="team-row second-row" ><
-            /div > 안에는 두 번째 줄에 사진 2개만 넣는 class를 지정했다.
-            <br />
-            <br />
-            < div class="image-container" >는 팀원 사진과 오버레이(hover 시
-            나타나는 정보)를 감싸는 컨테이너이다.
-            <br />
-            <br />
-            < div class="overlay" > ... < /div >는 사진 위에 겹쳐지는 오버레이
-            영역입니다. 마우스를 올리면 이 부분이 파란색 배경과 함께 나타난다. <
-            div class="overlay-box" >< /div >에는 오버레이 내부에 팀원
-            정보(이름, 역할)와 버튼들이 들어있다.
-            <br />
-            <br />
-            css의 overlay 부분은 기본적으로 opacity: 0으로 안 보이다가,
-            transition: opacity 0.3s로 0.3초 동안 서서히 나타나게 한다. 그리고
-            border-radius: 150px로 원형 모양으로 만들었다. 그리고 hover를 이용하여 마우스를 버튼 위에 올리면 버튼 색이 검정색으로 변하고, 글자색이 하얀색으로 바뀐다.
+            <b>team-row</b>을 이용하여 첫 줄엔 사진 3개, second-row는 두 번째 줄에 사진 2개가 들어있게 했습니다. 
+            <b>image-container</b>는 사진과 오버레이를 감싸는 박스입니다. <br />
+            <b>overlay</b>는 기본 opacity: 0이고, 마우스 올리면 파란 배경으로 0.3초간 서서히 나타납니다. 또한 사진을 <b>border-radius</b>를 이용하여 원형으로 만들었습니다. 
+            <b>overlay-box</b>에는 이름, 역할, 버튼이 들어갑니다. 
+            버튼에 마우스 올리면 배경은 검정, 글자색은 흰색으로 변경됩니다. 
           </p>
         </div>
       </div>
     </section>
 
     <script>
-        // 드롭다운 토글 함수
+        
         function toggleMenu() {
           const menu = document.getElementById('dropdownMenu');
           menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
         }
     
-        // 부드러운 스크롤 & 메뉴 닫기
         document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
           anchor.addEventListener('click', function (e) {
             e.preventDefault();
