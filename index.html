@@ -406,7 +406,7 @@
         const containerTop = document.getElementById("scroll-lines").offsetTop;
 
         // 기준점에 도달한 후, 스크롤할 때마다 한 줄씩 등장
-        if (scrollY > containerTop + currentIndex * 80 && currentIndex < lines.length) {
+        if (scrollY > containerTop + currentIndex * 110 && currentIndex < lines.length) {
           lines[currentIndex].classList.add("show");
           currentIndex++;
         }
