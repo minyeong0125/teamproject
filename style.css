@@ -611,3 +611,7 @@ button.next {
 .tech-section{
   margin: 80px 0px;
 }
+
+.tech-section h2{
+  text-align: center;
+}
